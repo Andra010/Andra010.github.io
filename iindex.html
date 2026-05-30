@@ -2,52 +2,106 @@
 <html>
 <head>
   <title>My Bio</title>
-</head> <style>
+
+  <style>
     .pill {
       padding: 6px 14px;
       background: #eee;
       border-radius: 999px;
       text-decoration: none;
     }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .card {
+      padding: 14px;
+      background: #f4f4f4;
+      border-radius: 8px;
+    }
   </style>
-  </head>
+</head>
+
 <body>
- <img src="images/banner.jpg" alt="My banner" width="100%">
+  <img src="images/banner.jpg" alt="My banner" width="100%">
+
   <nav>
     <a class="pill" href="#about">About</a>
+    <a class="pill" href="#projects">Projects</a>
     <a class="pill" href="#links">Links</a>
   </nav>
-  <h1 id="about">Alondra Garcia</h1>
 
-  <<p>
+  <h1 id="about">Alondra C Garcia</h1>
+
+  <p>
     I am a CS student at AVC. I enjoy building web pages and solving problems.
   </p>
-<h2 id="links">Find Me Online</h2>
 
-<ul>
-  <li>
-    <a href="https://www.tumblr.com/alondra-gar?source=share" target="_blank">
-      Tumblr
-    </a>
-  </li>
+  <section class="grid">
+    <div class="card">
+      <h3>Education</h3>
+      <p>AS Computer Science — AVC, expected 2027</p>
+    </div>
 
-  <li>
-    <a href="https://x.com/Clematis888" target="_blank">
-      X (Twitter)
-    </a>
-  </li>
+    <div class="card">
+      <h3>Skills</h3>
+      <p>HTML, Python, C++</p>
+    </div>
 
-  <li>
-    <a href="https://www.instagram.com/alondra_g191?igsh=NTc4MTIwNjQ2YQ==" target="_blank">
-      Instagram
+    <div class="card">
+      <h3>Interests</h3>
+      <p>Web development, AI, gaming</p>
+    </div>
+  </section>
+
+  <h2 id="projects">Projects</h2>
+
+  <details>
+    <summary>CS110 Bio Page</summary>
+    <p>Built with HTML and CSS. Hosted on GitHub Pages.</p>
+  </details>
+
+  <details>
+    <summary>Python Calculator</summary>
+    <p>A calculator app I built in CS120 for my final project.</p>
+  </details>
+
+  <h2 id="links">Find Me Online</h2>
+
+  <ul>
+    <li>
+      <a href="https://www.tumblr.com/alondra-gar?source=share" target="_blank">
+        Tumblr
+      </a>
+    </li>
+
+    <li>
+      <a href="https://x.com/Clematis888" target="_blank">
+        X (Twitter)
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.instagram.com/alondra_g191?igsh=NTc4MTIwNjQ2YQ==" target="_blank">
+        Instagram
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    Contact:
+    <a href="mailto:agarcia313@students.avc.edu">
+      agarcia313@students.avc.edu
     </a>
-  </li>
-</ul>
-<p>
-  Contact:
-  <a href="mailto:agarcia313@students.avc.edu">
-    agarcia313@students.avc.edu
-  </a>
-</p>
+  </p>
+
+  <p>
+    <a href="docs/resume.pdf" target="_blank">
+      Download My Resume
+    </a>
+  </p>
 </body>
 </html>
